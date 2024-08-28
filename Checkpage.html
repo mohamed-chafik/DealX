@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    
+    <div class="head">
+        <div class="header">
+            <div class="logo"><a href="index.html">DealX</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="slider">
+            <div class="slide">
+            <div class="left">
+                <img src="/images/caret-right-square-solid-24.png" alt="">
+            </div>
+            <div class="middle"></div>
+            <div class="right">
+                <img src="/images/caret-right-square-solid-24.png" alt="">
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+    <div class="form-container">
+        <h1>Check Your Car Deal</h1>
+        <form id="car-deal-form">
+            <div class="form-group">
+                <label for="car-name">Enter The Price</label>
+                <input type="text" id="car-price" name="car-name" placeholder="Enter car Price" class="inputs" required>
+            </div>
+            <div class="form-group">
+                <label for="car-mileage">Mileage</label>
+                <input type="text" id="car-mileage" name="car-mileage" placeholder="Enter mileage" class="inputs" required>
+            </div>
+            <div class="form-group">
+                <label for="car-condition">Condition</label>
+                <div class="radio-container">
+                    <input type="radio" id="condition-small"  name="car-condition" value="Poor" required>
+                    <label for="condition-small">Poor</label>
+
+                    <input type="radio" id="condition-medium" name="car-condition" value="Fair">
+                    <label for="condition-medium">mdium</label>
+
+                    <input type="radio" id="condition-large"  name="car-condition" value="Good">
+                    <label for="condition-large">Good</label>
+
+                    <input type="radio" id="condition-exelent"  name="car-condition" value="Excellent">
+                    <label for="condition-exelent">excellent</label>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" id="check-deal">Check Deal</button>
+            </div>
+        </form>
+    </div>
+    <div class="data_car">
+      <div class="car-details-container">
+        <h1>Car Details</h1>
+        <div class="car-info">
+            <div class="info-item">
+                <span class="label">Original Price:</span>
+                <span class="value" id="value_price"></span>
+            </div>
+            <div class="info-item">
+                <span class="label">Engine:</span>
+                <span class="value" id="value_engine"></span>
+            </div>
+            <div class="info-item">
+                <span class="label">Year:</span>
+                <span class="value" id="value_year"></span>
+            </div>
+            <div class="info-item">
+                <span class="label">Gear:</span>
+                <span class="value" id="value_gear"></span>
+            </div>
+            <div class="info-item">
+                <span class="label">Range:</span>
+                <span class="value" id="value_range"></span>
+            </div>
+            <div class="info-item">
+                <span class="label">Horse power:</span>
+                <span class="value" id="value_hp"></span>
+            </div>
+            <div class="info-item">
+              <span class="label">Weight:</span>
+              <span class="value" id="value_weight"></span>
+          </div>
+          <div class="info-item">
+            <span class="label">Fuel type:</span>
+            <span class="value" id="value_fuel"></span>
+        </div>
+            
+        </div>
+    </div>
+    </div>
+</div>
+<!-- Modal window -->
+
+
+<!-- Modal window -->
+<!-- Modal structure -->
+
+    
+ 
+<div class="modal">
+  <div class="modal-content">
+
+    <div id="card"> 
+      <button id="dismiss" type="button">×</button> 
+      <div id="header"> 
+    
+    <div id="div_image_v">
+        <div id="image">
+          <img src="" alt="">
+            </div> 
+      </div> 
+          <div id="content">
+             <span id="title1">Good Deal</span> 
+             <span id="title" class="titl"></span> 
+
+             <p id="message">This estimate is based on the car's age, mileage, and condition. Factors such as market demand and specific vehicle features may also affect the final value.</p> 
+             </div> 
+           
+                </div> 
+                </div>
+  </div>
+</div>
+
+
+
+<footer class="footer">
+    <div class="footer__addr">
+      <h1 class="footer__logo">Something</h1>
+          
+      <h2>Contact</h2>
+      
+      <address>
+        5534 Somewhere In. The World 22193-10212<br>
+            
+        <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+      </address>
+    </div>
+    
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">Media</h2>
+  
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Online</a>
+          </li>
+  
+          <li>
+            <a href="#">Print</a>
+          </li>
+              
+          <li>
+            <a href="#">Alternative Ads</a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="nav__item nav__item--extra">
+        <h2 class="nav__title">Technology</h2>
+        
+        <ul class="nav__ul nav__ul--extra">
+          <li>
+            <a href="#">Hardware Design</a>
+          </li>
+          
+          <li>
+            <a href="#">Software Design</a>
+          </li>
+          
+          <li>
+            <a href="#">Digital Signage</a>
+          </li>
+          
+          <li>
+            <a href="#">Automation</a>
+          </li>
+          
+          <li>
+            <a href="#">Artificial Intelligence</a>
+          </li>
+          
+          <li>
+            <a href="#">IoT</a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="nav__item">
+        <h2 class="nav__title">Legal</h2>
+        
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+          
+          <li>
+            <a href="#">Terms of Use</a>
+          </li>
+          
+          <li>
+            <a href="#">Sitemap</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    
+    <div class="legal">
+      <p>&copy; 2019 Something. All rights reserved.</p>
+      
+      <div class="legal__links">
+        <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+      </div>
+    </div>
+  </footer>
+  <script src="code.js"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

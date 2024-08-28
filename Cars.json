@@ -1,0 +1,108 @@
+[
+  {
+    "brand": "Ford",
+    "model": "F-150",
+    "year": 2020,
+    "image": "https://media.ed.edmunds-media.com/ford/f-150/2019/oem/2019_ford_f-150_crew-cab-pickup_king-ranch_fq_oem_1_1600.jpg",
+    "type": "Truck",
+    "specs": {
+        "top_speed": "N/A",
+        "price": "$28,321",
+        "transmission": "automatic",
+        "energy": "Gasoline",
+        "horsepower": 325,
+        "range": "N/A",
+        "engine": "V6, EcoBoost, Twin Turbo, 2.7 Liter",
+        "weight": "4628 lbs",
+        "seats": "6 seats",
+        "decay_rate": "12%",
+        "images": [
+            "https://file.kelleybluebookimages.com/kbb/base/evox/StJ/13233/2020-Ford-F150%20SuperCrew%20Cab-front-view_13233_118_640x480.jpg5555555",
+            "https://platform.cstatic-images.com/in/v2/stock_photos/32e39ed9-0494-4d0a-8fb8-bcd060218d92/38a6a604-4294-471f-935f-12e271e80d70.png",
+            "https://platform.cstatic-images.com/in/v2/stock_photos/32e39ed9-0494-4d0a-8fb8-bcd060218d92/89cfefa9-3f26-451c-902f-11d896b71099.png"
+        ]
+    }
+},
+  {
+    "brand": "BMW",
+    "model": "M5",
+    "year": 2023,
+    "image": "/images/M5.jpg",
+    "type": "SUV",
+    "specs": {
+      "top_speed": "155 mph",
+      "price": "$103,500",
+      "transmission": "Automatic",
+      "energy": "Gasoline",
+      "horsepower": 617,
+      "engine": "4.4L V8",
+      "range": "280 miles",
+      "weight": "4,370 lbs",
+      "seats": "4 seats",
+      "decay_rate": "18%",  
+      "images": ["/images/tesla.webp", "/images/M5.jpg", "/images/camry.avif","/images/e-class.avif", "/images/Focus.jpg", "/images/mustang.webp"]
+    }
+  },
+  {
+    "brand": "Toyota",
+    "model": "Camry",
+    "year": 2022,
+    "image": "/images/camry.avif",
+    "type": "Sport",
+    "specs": {
+      "top_speed": "135 mph",
+      "price": "$25,945",
+      "transmission": "Automatic",
+      "energy": "Gasoline",
+      "horsepower": 301,
+      "engine": "3.5L V6",
+      "range": "450 miles",
+      "weight": "3,480 lbs",
+      "fuel_efficiency": "32 mpg",
+      "seats": "4 seats",
+      "decay_rate": "12%",  
+      "images": ["/images/tesla.webp", "/images/M5.jpg", "/images/camry.avif","/images/e-class.avif", "/images/Focus.jpg", "/images/mustang.webp"]
+    }
+  },
+  {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 2023,
+    "image": "/images/mustang.webp",
+    "type": "Sport",
+    "specs": {
+      "top_speed": "155 mph",
+      "price": "$55,300",
+      "transmission": "Manual",
+      "energy": "Gasoline",
+      "horsepower": 450,
+      "engine": "5.0L V8",
+      "range": "300 miles",
+      "weight": "3,730 lbs",
+      "seats": "4 seats",
+      "decay_rate": "15%", 
+      "images": ["/images/tesla.webp", "/images/M5.jpg", "/images/camry.avif","/images/e-class.avif", "/images/Focus.jpg", "/images/mustang.webp"]
+    }
+  },
+  {
+    "brand": "Mercedes",
+    "model": "E-Class",
+    "year": 2023,
+    "image": "/images/e-class.avif",
+    "type": "Sport",
+    "specs": {
+      "top_speed": "130 mph",
+      "price": "$54,250",
+      "transmission": "Automatic",
+      "energy": "Gasoline",
+      "horsepower": 362,
+      "engine": "3.0L Inline-6 Turbo",
+      "range": "350 miles",
+      "weight": "4,035 lbs",
+      "fuel_efficiency": "25 mpg",
+      "seats": "4 seats",
+      "decay_rate": "17%", 
+      "images": ["/images/tesla.webp", "/images/M5.jpg", "/images/camry.avif","/images/e-class.avif", "/images/Focus.jpg", "/images/mustang.webp"]
+    }
+  }
+]

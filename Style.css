@@ -1,0 +1,784 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+:root {
+    --rad: .7rem;
+    --dur: .3s;
+    --color-dark: #2f2f2f;
+    --color-light: #fff;
+    --color-brand: #57bd84;
+    --font-fam: 'Lato', sans-serif;
+    --height: 5rem;
+    --btn-width: 6rem;
+    --bez: cubic-bezier(0, 0, 0.43, 1.49);
+  }
+body{
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+.head{
+    width: 100%;
+    height: 100vh;
+    background-color: #eae9e9;
+    
+}
+.header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    font-family: "Acme", sans-serif;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    justify-content: center;
+}
+.logo a{
+  color: black;
+}
+.menu{
+    width: 50%;
+    height: 100%;
+    margin-left: 221px;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    font-family: "Fira Sans Condensed", sans-serif;
+    
+}
+.menu ul li a{
+    color: #717376;
+    font-size: 14px;
+
+}
+.home{
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+.left-side{
+    width: 40%;
+    height: 100%;
+}
+.right-side{
+    width: 53%;
+    margin: auto;
+    height: 100%;
+    background-image: url(/images/car.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.left-side{
+    font-family: "Sora", sans-serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.left-side h2{
+    color: #171a20;
+}
+.left-side p{
+    color: #717376;
+}
+.quote{
+    width: 80%;
+    height: 40%;
+}
+.results{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.cards{
+    width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 57px;
+  flex-wrap: wrap;
+}
+
+
+
+
+.searchBox {
+    position: absolute;
+    top: 50%;
+    transform:  translate(-50%,50%);
+    background: #2f3640;
+    margin-left: 201px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #2f3640;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0 ;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px ;
+
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+    width: 150px ;
+    padding: 0 6px ;
+}
+}
+
+
+.content{
+    width: 90%;
+    height: 100%;
+}
+
+/* From Uiverse.io by Yaya12085 */ 
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0.75rem;
+    background-color: white;
+    width: 368px;
+    height: 370px;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,.1),
+    0 2px 4px -2px rgba(0,0,0,.1);
+    font-family: "Sora", sans-serif;
+    cursor: pointer;
+  }
+  
+  .headers{
+    position: relative;
+    background-clip: border-box;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4),0 4px 6px -4px rgba(32, 32, 32, 0.4);
+    height: 14rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: round;
+  }
+  
+  .info {
+    border: none;
+    text-align: center;
+    height: 30%;
+  }
+  
+  .title {
+    color: rgb(38 50 56);
+    letter-spacing: 0;
+    line-height: 1.375;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    margin-top: 41px;
+    display: flex;
+    font-family: "Sora", sans-serif;
+  }
+  .title h1{
+    font-size: 24px;
+  }
+  
+
+  
+  .tag {
+    font-weight: 300;
+    font-size: .75rem;
+    display: block;
+  }
+  
+  .action {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 6px -1px rgba(33,150,243,.4),0 2px 4px -2px rgba(33,150,243,.4);
+    color: rgb(255 255 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(33 150 243);
+    border-radius: 0.5rem;
+  }
+  
+  .data{
+    display: flex;
+    justify-content: space-around;
+    line-height: 30px;
+  }
+  .icons img{
+    width: 20px;
+  }
+  .icons p{
+    font-size: 12px;
+    color: rgb(92, 92, 92);
+
+  }
+  .icons{
+    display: flex;
+    align-items: center;
+    font-family: "Radio Canada Big", sans-serif;
+  }
+
+
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #2f2f2f;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 161px;
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer address {
+  font-style: normal;
+  color: #999;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #2f2f2f;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: #999;
+}
+
+.nav__ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
+  
+.legal__links {
+  display: flex;
+  align-items: center;
+}
+
+.heart {
+  color: #2f2f2f;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+
+
+
+
+/* check page */
+.slider{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.left , .right{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  
+}
+.middle{
+  width: 110%;
+  height: 94%;
+  background-image: url(/images/M5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity 0.5s ease-in-out; /* Add transition for smooth fading */
+  opacity: 1; /* Default state */
+  border-radius: 18px;
+}
+.middle.fade-out {
+  opacity: 0; /* Start fading out */
+}
+
+.middle.fade-in {
+  opacity: 1; /* Fade in */
+}
+
+.slide:hover{
+    .right img{
+      right: 0;
+      position: relative;
+      opacity: 1;
+  }
+  .left img{
+    right: 0;
+    position: relative;
+    opacity: 1;
+}
+}
+.left{
+  justify-content: right;
+  align-items: center;
+}
+.right{
+  justify-content: left;
+  align-items: center;
+}
+.left img{
+  width: 56px;
+  height: 48px;
+  rotate: 180deg;
+  right: 53px;
+  position: relative;
+  opacity: 0;
+  transition: 1000ms;
+  cursor: pointer;
+}
+.right img{
+  width: 56px;
+  height: 48px;
+  right: -53px;
+  position: relative;
+  opacity: 0;
+  transition: 1000ms;
+  cursor: pointer;
+}
+.left{
+  margin-right: 0;
+}
+.right{
+  margin-left: 0;
+ 
+}
+.slide{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+/* fields */
+.form-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 72px;
+  width: 628px;
+  margin-top: 60px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border: #cfd4da solid;
+}
+
+.form-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-family: "Sora", sans-serif;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+
+.inputs {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.radio-container {
+  display: flex;
+  justify-content: space-between;
+  background: #C1C1C1;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.radio-container label {
+  background: transparent;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.radio-container input[type="radio"] {
+  display: none;
+}
+
+.radio-container input[type="radio"]:checked + label {
+  background: #807182;
+  color: white;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+}
+
+#check-deal {
+  padding: 10px 20px;
+  background-color: #807182;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#check-deal:hover {
+  background-color: #171A2B;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.car_data{
+  width: 30%;
+}
+
+.car-details-container {
+  width: 415px;
+  margin: 0 auto;
+  padding-top: 72px !important;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+  padding: 20px;
+  border: #cfd4da solid;
+}
+
+.car-details-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  font-family: "Sora", sans-serif;
+}
+
+.car-info {
+  display: grid;
+  gap: 10px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+
+.label {
+  font-weight: bold;
+  color: #555;
+}
+
+.value {
+  color: #000;
+}
+
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+
+
+  
+}
+.moda1{
+  display: block;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #fff;
+  width:fit-content;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* From Uiverse.io by rzouga001 */ 
+#card {
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  border-radius: 0.5rem;
+  max-width: 590px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  background-color: #fff;
+  justify-self: center;
+}
+
+#div_image_v {
+  background: #47c9a2;
+  border-bottom: none;
+  position: relative;
+  text-align: center;
+  margin: -20px -20px 0;
+  border-radius: 5px 5px 0 0;
+  padding: 35px;
+}
+
+#dismiss {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  color: black;
+  border: 2px solid #D1D5DB;
+  font-size: 1rem;
+  font-weight: 300;
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  transition: .3s ease;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#dismiss:hover {
+  background-color: gray;
+  color: #fff;
+}
+
+#header {
+  padding: 1.25rem 1rem 1rem 1rem;
+}
+
+#image {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e2feee;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  animation: animate .6s linear alternate-reverse infinite;
+  transition: .6s ease;
+}
+
+#image svg {
+  color: #0afa2a;
+  width: 100%;
+  height: 100%;
+}
+
+#content {
+  margin-top: 0.75rem;
+  text-align: center;
+  display: grid;
+}
+
+#title {
+  color: #2f2f2f;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  font-family: "Fira Sans Condensed", sans-serif;
+
+}
+#title1 {
+  color: #2f2f2f;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  font-family: "Fira Sans Condensed", sans-serif;
+
+}
+
+#message {
+  margin-top: 0.5rem;
+  color: #595b5f;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+@keyframes animate {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.09);
+  }
+}
+
+#image img{
+  height: 33px;
+}
